@@ -1,0 +1,59 @@
+extends common/layout
+
+block content
+  main.main
+    .main__title
+      img.main__title-image(src='./img/title-image.png' alt='Title image')
+    .main__latest
+      .wrapper
+        img.main__latest-title(src='./img/latest-title.png' alt='Latest work')
+        .main__latest-content
+          .main__latest-description
+            h2 BRRRILLIANT
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt similique quia ut assumenda quo rerum eum laudantium consequatur suscipit sequi nulla delectus quam officiis culpa soluta nesciunt, recusandae id voluptas?
+            span.main__latest-trophy Trophy
+            span.main__latest-items List Items
+            span.main__latest-rating Rating
+          .main__latest-mockup
+            img.main__latest-mockup-image(src='./img/latest-mockup-image.png' alt='Latest work image')
+          .main__latest-technologies
+            h2 Technologies Used
+            table.main__latest-technologies-table
+              tr
+                each val in['html5', 'css3', 'android']
+                  td
+                    img(src='./img/' + val + '.png' alt=val)
+                    p= val
+            a(href='#') View Gallery
+        .main__latest-footer
+          a(href='#') Previous project
+          span 01/<sup>04</sup>
+          a(href='#') Next project
+    .main__work
+      .wrapper
+        img.main__work-title(src="./img/work-title.png" alt="How we work")
+        .main__work-items
+          each val in ['plan', 'action', 'launch']
+            div(class='main__work-item main__work-' + val)
+              h2= val
+              p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, expedita. Sint veniam, dicta amet dolorem, blanditiis quidem ipsam consequuntur eum at iste distinctio nobis facilis quo magnam assumenda illo officiis?
+        a(href="#").main__work-invite Work with us
+    .main__blog
+      img.main__blog-title(src='./img/blog-title.png' alt="Our latest blog posts")
+      .main__blog-item
+        img.main__blog-item-image(src='./img/blog-item-1.png' alt="Article image")
+        .main__blog-item-date
+          span 23
+          span august
+        span.main__blog-item-author by Tommy Griffin
+        span.main__blog-item-title Hollywood's latest trend comes underfire
+        a.main__blog-item-anchor(href="#") Read article      
+      input.main__blog-range(type='range'
+        min='1'
+        max='100'
+        value='50'
+        id='blog-range')
+    .main__facts
+      img.main__facts-title(src='./img/facts-title.png' alt="Fun facts")
+      img.main__facts-content(src='./img/fact-content.png' alt ="Facts about company")      
+
