@@ -13,7 +13,7 @@ module.exports = function styles() {
     .pipe(autoprefixer())
     .pipe(shorthand())
     .pipe(cleanCSS())
-//    .pipe(sourcemaps.init())
-    .pipe()
+    //    .pipe(sourcemaps.init())
+    //    .pipe()
     .pipe(gulp.dest('build/css'));
 }
