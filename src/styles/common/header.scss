@@ -1,0 +1,48 @@
+.header {
+
+    margin-bottom: 45px;
+
+    .wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+}
+
+.header__logo {
+    margin-top: 15px;
+}
+
+.header__nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.header__nav-items {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.header__nav-item {
+
+    a {
+        text-decoration: none;
+        padding: 35px 15px;
+        color: rgb(153, 153, 153);
+
+        &:hover {
+            color: black;
+        }
+    }
+
+}
+
+.header__mail {
+    margin-left: 10px;
+}

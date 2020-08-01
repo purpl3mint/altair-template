@@ -1,10 +1,11 @@
 header.header
-  a(href='#')
-    img.header__logo(src='./img/header__logo.png' alt='Altair logo')
-  nav.header__nav
-    ul.header__nav-items
-      each val in ['home', 'work', 'process', 'blog', 'fun facts']
-        li.header__nav-item
-          a(href='#')= val
+  div.wrapper
     a(href='#')
-      img.header__mail(src='./img/header__mail.png' alt='Mail')
+      img.header__logo(src='./img/logo-header.png' alt='Altair logo')
+    nav.header__nav
+      ul.header__nav-items
+        each val in ['home', 'work', 'process', 'blog', 'fun facts']
+          li.header__nav-item
+            a(href='#')= val
+      a(href='#')
+        img.header__mail(src='./img/mail-header.png' alt='Mail')
