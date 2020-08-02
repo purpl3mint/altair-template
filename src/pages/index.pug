@@ -15,7 +15,7 @@ block content
             span.main__latest-items List Items
             span.main__latest-rating Rating
           .main__latest-mockup
-            img.main__latest-mockup-image(src='./img/latest-mockup-image.png' alt='Latest work image')
+            img.main__latest-mockup-image(src='./img/iphone-work.png' alt='Latest work image')
           .main__latest-technologies
             h2 Technologies Used
             table.main__latest-technologies-table
@@ -26,9 +26,9 @@ block content
                     p= val
             a(href='#') View Gallery
         .main__latest-footer
-          a(href='#') Previous project
-          span 01/<sup>04</sup>
-          a(href='#') Next project
+          a(href='#' class='pagination-prev') Previous project
+          span.pagination-center 01/<sup>04</sup>
+          a(href='#' class='pagination-next') Next project
     .main__work
       .wrapper
         img.main__work-title(src="./img/work-title.png" alt="How we work")
@@ -54,6 +54,7 @@ block content
         value='50'
         id='blog-range')
     .main__facts
-      img.main__facts-title(src='./img/facts-title.png' alt="Fun facts")
-      img.main__facts-content(src='./img/fact-content.png' alt ="Facts about company")      
+      .wrapper
+        img.main__facts-title(src='./img/facts-title.png' alt="Fun facts")
+        img.main__facts-content(src='./img/fact-content.png' alt ="Facts about company")      
 
