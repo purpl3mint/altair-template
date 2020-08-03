@@ -11,20 +11,26 @@ block content
           .main__latest-description
             h2 BRRRILLIANT
             p Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt similique quia ut assumenda quo rerum eum laudantium consequatur suscipit sequi nulla delectus quam officiis culpa soluta nesciunt, recusandae id voluptas?
-            span.main__latest-trophy Trophy
-            span.main__latest-items List Items
-            span.main__latest-rating Rating
+            span.main__latest-trophy 
+              span(class='fa fa-trophy') 
+              span TROPHY
+            span.main__latest-items 
+              span(class='fa fa-list') 
+              span LIST ITEMS
+            span.main__latest-rating 
+              span(class='fa fa-star') 
+              span RATING
           .main__latest-mockup
             img.main__latest-mockup-image(src='./img/iphone-work.png' alt='Latest work image')
           .main__latest-technologies
-            h2 Technologies Used
+            h2 TECHNOLOGIES USED
             table.main__latest-technologies-table
               tr
                 each val in['html5', 'css3', 'android']
                   td
-                    img(src='./img/' + val + '.png' alt=val)
+                    span(class= 'fa fa-'+val)
                     p= val
-            a(href='#') View Gallery
+            a(href='#') VIEW GALLERY
         .main__latest-footer
           a(href='#' class='pagination-prev') Previous project
           span.pagination-center 01/<sup>04</sup>

@@ -1,7 +1,7 @@
 .main__title-image {
     width: 99vw;
     position: relative;
-    top: 3px;
+    top: 4px;
 }
 
 .main__latest {
@@ -38,12 +38,18 @@
 
     p {
         font-size: 12px;
+        line-height: 20px;
         margin-bottom: 20px;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
-    span {
+    & > span {
         display: block;
         margin-bottom: 5px;
+
+        .fa {
+            margin-right: 10px;
+        }
     }
 
 }
@@ -65,6 +71,15 @@
                 height: 100px;
                 background-color: rgb(99, 95, 109);
                 text-align: center;
+
+                & > span {
+                    font-size: 42px;
+                }
+
+                & > p {
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 700;
+                }
             }
 
             &:first-child > td:first-child {
