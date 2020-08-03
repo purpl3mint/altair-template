@@ -37,12 +37,22 @@ block content
           a(href='#' class='pagination-next') Next project
     .main__work
       .wrapper
+        img.main__work-losers(src='./img/work-losers.png' alt="Work losers")
+        img.main__work-winners(src='./img/work-winners.png' alt="Work winners")
         img.main__work-title(src="./img/work-title.png" alt="How we work")
         .main__work-items
-          each val in ['plan', 'action', 'launch']
-            div(class='main__work-item main__work-' + val)
-              h2= val
-              p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, expedita. Sint veniam, dicta amet dolorem, blanditiis quidem ipsam consequuntur eum at iste distinctio nobis facilis quo magnam assumenda illo officiis?
+          div(class='main__work-item main__work-plan')
+            span(class='fa fa-lightbulb-o')
+            h2 PLAN
+            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, expedita. Sint veniam, dicta amet dolorem, blanditiis quidem ipsam consequuntur eum at iste distinctio nobis facilis quo magnam assumenda illo officiis?
+          div(class='main__work-item main__work-action')
+            span(class='fa fa-cogs')
+            h2 ACTION
+            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, expedita. Sint veniam, dicta amet dolorem, blanditiis quidem ipsam consequuntur eum at iste distinctio nobis facilis quo magnam assumenda illo officiis?
+          div(class='main__work-item main__work-launch')
+            span(class='fa fa-rocket')
+            h2 LAUNCH
+            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, expedita. Sint veniam, dicta amet dolorem, blanditiis quidem ipsam consequuntur eum at iste distinctio nobis facilis quo magnam assumenda illo officiis?
         a(href="#").main__work-invite Work with us
     .main__blog
       img.main__blog-title(src='./img/blog-title.png' alt="Our latest blog posts")
