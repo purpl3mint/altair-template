@@ -55,22 +55,29 @@ block content
             p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, expedita. Sint veniam, dicta amet dolorem, blanditiis quidem ipsam consequuntur eum at iste distinctio nobis facilis quo magnam assumenda illo officiis?
         a(href="#").main__work-invite Work with us
     .main__blog
-      img.main__blog-title(src='./img/blog-title.png' alt="Our latest blog posts")
-      .main__blog-item
-        img.main__blog-item-image(src='./img/blog-item-1.png' alt="Article image")
-        .main__blog-item-date
-          span 23
-          span august
-        span.main__blog-item-author by Tommy Griffin
-        span.main__blog-item-title Hollywood's latest trend comes underfire
-        a.main__blog-item-anchor(href="#") Read article      
-      input.main__blog-range(type='range'
-        min='1'
-        max='100'
-        value='50'
-        id='blog-range')
+      .wrapper
+        img.main__blog-title(src='./img/blog-title.png' alt="Our latest blog posts")
+        .main__blog-item
+          .main__blog-item-image
+            img(src='./img/blog-item-1.png' alt="Article image" width="300" height="250")
+          .main__blog-item-date
+            span.day 23
+            span.month august
+          span.main__blog-item-author by Tommy Griffin
+          span.main__blog-item-title Hollywood's latest trend comes underfire
+          a.main__blog-item-anchor(href="#") 
+            span(class='fa fa-chevron-circle-right') 
+            span read article      
+        input.main__blog-range(type='range'
+          min='1'
+          max='100'
+          value='50'
+          id='blog-range')
     .main__facts
       .wrapper
-        img.main__facts-title(src='./img/facts-title.png' alt="Fun facts")
-        img.main__facts-content(src='./img/fact-content.png' alt ="Facts about company")      
+        img.facts-title(src='./img/facts-title.png' alt="Fun facts")
+        h2.facts-favourite-title Our favourite clients:
+        .facts-clients
+            img(src='./img/facts-clients.png' class= 'facts-clients-image' alt='our clients')
+        img.facts-content(src='./img/facts-content.png' alt ="Facts about company")      
 
