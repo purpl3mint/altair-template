@@ -57,21 +57,23 @@ block content
     .main__blog
       .wrapper
         img.main__blog-title(src='./img/blog-title.png' alt="Our latest blog posts")
-        .main__blog-item
-          .main__blog-item-image
-            img(src='./img/blog-item-1.png' alt="Article image" width="300" height="250")
-          .main__blog-item-date
-            span.day 23
-            span.month august
-          span.main__blog-item-author by Tommy Griffin
-          span.main__blog-item-title Hollywood's latest trend comes underfire
-          a.main__blog-item-anchor(href="#") 
-            span(class='fa fa-chevron-circle-right') 
-            span read article      
+        .main__blog-articles
+          each val in ['1', '2', '3', '4']
+            .main__blog-item
+              .main__blog-item-image
+                img(src='./img/blog-item-1.png' alt="Article image" width="300" height="250")
+              .main__blog-item-date
+                span.day 23
+                span.month august
+              span.main__blog-item-author by Tommy Griffin
+              span.main__blog-item-title Hollywood's latest trend comes underfire
+              a.main__blog-item-anchor(href="#") 
+                span(class='fa fa-chevron-circle-right') 
+                span read article          
         input.main__blog-range(type='range'
-          min='1'
+          min='0'
           max='100'
-          value='50'
+          value='0'
           id='blog-range')
     .main__facts
       .wrapper

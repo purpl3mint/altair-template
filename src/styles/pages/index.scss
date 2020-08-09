@@ -229,6 +229,9 @@
 }
 
 .main__blog {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
   background-color: rgb(63, 59, 72);
   padding-top: 80px;
   padding-bottom: 85px;
@@ -236,12 +239,22 @@
 
 .main__blog-title {
   margin: 0 auto;
-  margin-bottom: 75px;
+  margin-bottom: 570px;
+}
+
+.main__blog-articles {
+  position: absolute;
+  top: 215px;
+  left: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .main__blog-item {
   position: relative;
   margin-bottom: 55px;
+  margin-left: 50px;
   width: 300px;
   height: 405px;
   padding: 20px;
